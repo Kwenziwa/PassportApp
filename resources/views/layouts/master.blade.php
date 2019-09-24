@@ -95,17 +95,12 @@
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="#" class="nav-link active">
-                          <i class="fas fa-circle nav-icon"></i>
-                          <p>Active Page</p>
-                        </a>
+                        <router-link to="/users" class="nav-link " tag="a" class="nav-link"  active-class="active" exact>
+                          <i class="fas fa-users nav-icon"></i>
+                          <p>Users</p>
+                        <router-link>
                       </li>
-                      <li class="nav-item">
-                        <a href="#" class="nav-link">
-                          <i class="fas fa-circle nav-icon"></i>
-                          <p>Inactive Page</p>
-                        </a>
-                      </li>
+                    
                     </ul>
                   </li>
 
@@ -136,12 +131,18 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-      <router-view></router-view>
-    
-  </div>
 
-  </div>
-  <!-- /.content-wrapper -->
+      <!-- Main content -->
+      <div class="content">
+        <div class="container-fluid">
+          <router-view></router-view>
+  
+          <vue-progress-bar></vue-progress-bar>
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
 
   
 
