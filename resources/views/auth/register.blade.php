@@ -40,6 +40,27 @@
                         </div>
 
                         <div class="form-group row">
+                                <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
+    
+                                <div class="col-md-6">
+                                    <select  id="gender" type="email" class="form-control @error('gender') is-invalid @enderror" name="gender"  required >
+
+                                            <option value="">---Select Gender---</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+
+                                    
+                                    </select>
+    
+                                    @error('gender')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
@@ -52,6 +73,8 @@
                                 @enderror
                             </div>
                         </div>
+
+                        
 
                         <div class="form-group row">
                             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
