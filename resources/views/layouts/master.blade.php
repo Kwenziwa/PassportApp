@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="/css/app.css" >
  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition sidebar-mini">
-<div class="wrapper">
+<body class="hold-transition sidebar-mini" >
+<div class="wrapper" id="app">
 
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -69,12 +69,12 @@
                with font-awesome or any other icon font library -->
 
                <li class="nav-item">
-                <a href="#" class="nav-link">
+                <router-link to="/dashboard" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
                     Dashboard 
                   </p>
-                </a>
+                </router-link>
               </li>
 
               
@@ -91,12 +91,12 @@
             
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <router-link to="profile" class="nav-link">
                 <i class="nav-icon fas fa-user-alt"></i>
                 <p>
                   Profile 
                 </p>
-              </a>
+              </router-link >
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -117,15 +117,10 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+      <router-view></router-view>
     
   </div>
-    <!-- /.content-header -->
 
-    <!-- Main content -->
-    <div class="content">
-     
-    </div>
-    <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
 
