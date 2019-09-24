@@ -69,7 +69,7 @@
                with font-awesome or any other icon font library -->
 
                <li class="nav-item">
-                <router-link to="/dashboard" class="nav-link">
+                <router-link to="dashboard" class="nav-link" tag="a" class="nav-link"  active-class="active" exact>
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
                     Dashboard 
@@ -91,7 +91,7 @@
             
 
             <li class="nav-item">
-              <router-link to="profile" class="nav-link">
+              <router-link to="profile" class="nav-link" tag="a" class="nav-link"  active-class="active" exact>
                 <i class="nav-icon fas fa-user-alt"></i>
                 <p>
                   Profile 
